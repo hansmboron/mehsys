@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../img/flavicon.png" />
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../scss/style.scss">
+    <title>Mehsys - Cadastre seu estabelecimento em nosso aplicativo</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand mb-0" href="#"><img src="../img/logo.png" height="30px"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="estabelecimentos.html">Estabelecimentos<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="agendamentos.html">Agendamentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre_nos.html">Sobre nós</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+                    <button class="btn btn-danger my-2 my-sm-0 mr-sm-2" type="button" data-toggle="modal"
+                        data-target="#cadModal">Cadastrar-se</button>
+                    <button class="btn btn-success my-2 my-sm-0" type="button">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Coisas</h1><br>
+    </div>
+
+    <!--MODAL-->
+    <div class="modal fade" id="cadModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>x</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <h1>body</h1>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
