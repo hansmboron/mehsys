@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="../img/flavicon.png" />
-    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/compiler/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../scss/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Mehsys - Cadastre seu estabelecimento em nosso aplicativo</title>
 </head>
 
@@ -48,14 +48,67 @@
         </div>
     </nav>
 
-    <div class="container">
-        <h1>Coisas</h1><br>
-    </div>
-
-
-
     <div class="container text-center">
-        <h1>Cadastrar Estabelecimentos</h1>
+        <br>
+        <section class="form-container">
+            <div class="row justify-content-center">
+                <form class="form-signup" id="dataSheet">
+                    <h2 id="form-signup-heading">
+                        Cadastre seu estabelecimento no Mehsys
+                    </h2>
+                    <div class="name-container input-box form-group">
+                        <label for="name" class="sr-only">Nome</label>
+                        <input type="text" id="name" class="form-control" placeholder="Nome do proprietário" required>
+                    </div>
+                    <div class="lastname-container input-box form-group">
+                        <label for="lastname" class="sr-only">Sobrenome</label>
+                        <input type="text" id="lastname" class="form-control" placeholder="Sobrenome do proprietário"
+                            required>
+                    </div>
+                    <div class="input-box form-group">
+                        <label for="lastname" class="sr-only">Endereço</label>
+                        <input type="text" id="endereco" class="form-control" placeholder="Endereço do Estabelecimento"
+                            required>
+                    </div>
+                    <div class="input-box form-group">
+                        <label for="lastname" class="sr-only">Telefone</label>
+                        <input type="tel" id="telefone" class="form-control" placeholder="Telefone do estabelecimento">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="tipo">
+                            <option value="0">Selecione o tipo de estabelecimento</option>
+                            <option value="urbana">Salão de Beleza</option>
+                            <option value="treking">Barbearia</option>
+                            <option value="electrica">Outro</option>
+                        </select>
+                    </div>
+                    <div class="input-box form-group">
+                        <label for="lastname" class="sr-only">Serviços</label>
+                        <input type="text" id="servicos" class="form-control"
+                            placeholder="Adicione serviços de seu estabelecimento" required>
+
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="inputEmail" placeholder="Nome Completo">
+                        </div>
+                        <div class="form-group">
+                            <input type="button" value="Adicionar serviço">
+                        </div>
+
+                    </div>
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="remember-me" checked>
+                            <span>Desejo receber informações por email</span>
+                        </label>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block submit-btn" type="submit">Registrar</button>
+                </form>
+
+            </div>
+        </section>
     </div>
 
     <footer class="text-center" id="rodape">
@@ -64,16 +117,17 @@
         <a class="mx-2" href="estabelecimentos.html">Estabelecimentos</a>
         <a class="mx-2" href="agendamentos.html">Agendamentos</a>
         <a class="mx-2" href="sobre_nos.html">Sobre nós</a>
-        <a class="mx-2" href="https://mega.nz/#!2NgRBYJA!nW5QuqKkbQwq6NRoDp_3PsQZbnuGtWFyQNDdh5LTIhU">Baixar
+        <a class="mx-2" href="https://mega.nz/#!2NgRBYJA!nW5QuqKkbQwq6NRoDp_3PsQZbnuGtWFyQNDdh5LTIhU"
+            target="_blank">Baixar
             Mehsys</a><br>
         <p>Copyright &copy; 2020 - by Hans M Boron <br />
             <a href="https://web.facebook.com/hansmateusboron.boron" target="_blank">Facebook</a> |
             <a href="https://br.linkedin.com/pub/hans-mateus-boron/a4/468/282" target="_blank">LinkedIn</a></p>
     </footer>
 
-    <script src="../node_modules/jquery/dist/jquery.js"></script>
-    <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
 
 </body>
 
