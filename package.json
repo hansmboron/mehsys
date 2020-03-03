@@ -1,17 +1,25 @@
 {
-  "name": "mehsys_fire",
+  "name": "mehsys",
   "version": "1.0.0",
-  "description": "Website Mehsys",
+  "description": "Aplicativo para gerenciar salão de beleza/barbearia",
   "main": "index.js",
-  "dependencies": {
-    "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
-    "popper.js": "^1.16.1"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hansmboron/mehsys.git"
+  },
   "author": "Hans M. Boron",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hansmboron/mehsys/issues"
+  },
+  "homepage": "https://github.com/hansmboron/mehsys#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.0.6",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1"
+  }
 }
