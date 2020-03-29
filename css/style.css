@@ -1,26 +1,162 @@
+.black {
+    color: black;
+}
 
 .scrollspySite {
-    position: relative;
-    overflow: auto;
-    height: 415px;
-    background-color: #fafafa;
+	position: relative;
+	overflow: auto;
+	height: 500px;
+	width: 100%;
+	padding: 0px 15px 0px 15px;
+	border-radius: 8px;
+	text-align: justify;
 }
-
+.scrollspySite p {
+	text-indent: 40px;
+	color: #2b2b2b;
+	font-size: 18px;
+}
+#navbarVertical {
+	border-radius: 8px;
+}
+#carouselSite p {
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .4) 50%, rgba(0, 0, 0, 0) 100%);
+}
+#carouselSite h3 {
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .4) 50%, rgba(0, 0, 0, 0) 100%);
+}
 .display-4 {
-    color:  #850085;
+	color: #850085;
 }
-
 .modal-header {
-    color: #850085;
-    background-color: #fafafa;
+	color: #fafafa;
+	background-color: #850085;
+}
+/* .modal-footer{color: #fafafa; background-color: #850085;}*/
+
+img#avatar {
+	background-color: #ddd;
+	border-radius: 20%;
+	border: 2px solid gray;
+	height: 100px;
+	object-fit: cover;
+	width: 80px;
+}
+a#btn-insta {
+	background-color: #d6501b;
+	background-image: linear-gradient(90deg, #d6501b 10%, #af097d 60%, #5a1ebb 100%);
+	background-size: cover;
+}
+body,
+footer {
+	font-family: 'Baloo 2', cursive;
+}
+/* botao para subir na pagina */
+
+#btn_top {
+	display: none;
+	position: fixed;
+	width: 48px;
+	height: 48px;
+	bottom: 15px;
+	right: 15px;
+	z-index: 9999;
+	border: none;
+	outline: none;
+	background-color: purple;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 30px;
+	-webkit-transition: .2s ease-out;
+	-moz-transition: .2s ease-out;
+	transition: .2s ease-out;
+}
+#btn_top:hover {
+	background-color: #555;
+}
+/* The snackbar - position it at the bottom and in the middle of the screen */
+
+#snackbar {
+	visibility: hidden;
+	min-width: 250px;
+	margin-left: -125px;
+	background-color: rgba(255, 20, 20, .9);
+	color: #fff;
+	text-align: center;
+	border-radius: 4px;
+	padding: 16px;
+	position: fixed;
+	z-index: 999;
+	left: 50%;
+	top: 60px;
+}
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+
+#snackbar.show {
+	visibility: visible;
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+/* Animations to fade the snackbar in and out */
+
+@-webkit-keyframes fadein {
+	from {
+		top: 0;
+		opacity: 0;
+	}
+	to {
+		top: 60px;
+		opacity: 1;
+	}
+}
+@keyframes fadein {
+	from {
+		top: 0;
+		opacity: 0;
+	}
+	to {
+		top: 60px;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes fadeout {
+	from {
+		top: 60px;
+		opacity: 1;
+	}
+	to {
+		top: 0;
+		opacity: 0;
+	}
+}
+@keyframes fadeout {
+	from {
+		top: 60px;
+		opacity: 1;
+	}
+	to {
+		top: 0;
+		opacity: 0;
+	}
+}
+/* infobar */
+
+#infobar {
+	padding: 4px 4px 4px 4px;
+	position: relative;
+	z-index: 998;
+	left: 0px;
+	top: -100px;
+	width: 100%;
+	border-bottom: 1px solid #000000;
+	background-color: rgb(77, 224, 77)
+}
+.psobre {
+	font-size: 17px;
+	text-indent: 3em;
 }
 
-.modal-footer {
-    color: #850085;
-    background-color: #fafafa;
+form.user .rad {
+	border-radius: 10rem;
 }
-
-.mx-2{
-    font-size: 12px;
-}
-

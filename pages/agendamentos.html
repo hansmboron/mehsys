@@ -6,68 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="../img/flavicon.png" />
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/mehsys_style.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../img/font-awesome/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,600&display=swap" rel="stylesheet">
     <title>Mehsys - Gerencie os agendamentos de seus clientes</title>
-</head>
+</head><br> <br>
 
 <body>
-    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-            <a class="navbar-brand mb-0" href="#"><img src="../img/logo.png" height="30px"> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-gradient-primary">
+        <div class="container"> <a class="navbar-brand mb-0" href="../index.html"><img src="../img/logo.png"
+                    height="30px"> </a> <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="estabelecimentos.html">Estabelecimentos</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="agendamentos.html">Agendamentos<span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sobre_nos.html">Sobre nós</a>
-                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="../index.html"><strong>Home</strong></a></li>
+                    <li class="nav-item"> <a class="nav-link"
+                            href="estabelecimentos.html"><strong>Estabelecimentos</strong></a></li>
+                    <li class="nav-item active"> <a class="nav-link" href="agendamentos.html"><i
+                                class="fa fa-calendar"></i> <strong>Agendamentos</strong><span
+                                class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"> <a class="nav-link" href="sobre_nos.html"><strong>Sobre nós</strong></a></li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <a class="mr-sm-5" href="https://mega.nz/#!2NgRBYJA!nW5QuqKkbQwq6NRoDp_3PsQZbnuGtWFyQNDdh5LTIhU"
-                        target="_blank"><img src="../img/appstore.png"></a>
-                    <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
-                    <button class="btn btn-danger my-2 my-sm-0 mr-sm-2" type="button">Cadastrar-se</button>
-                    <button class="btn btn-success my-2 my-sm-0" type="button">Entrar</button>
-                </form>
+                <form class="form-inline my-2 my-lg-0"> <a class="mr-sm-4"
+                        href="https://mega.nz/#!2NgRBYJA!nW5QuqKkbQwq6NRoDp_3PsQZbnuGtWFyQNDdh5LTIhU"
+                        target="_blank"><img src="../img/appstore.png"></a> <a href="../register.html"
+                        class="btn-sm btn-danger my-sm-0 mr-sm-2 mr-2"> <i class="fa fa-sign-in" aria-hidden="true"></i>
+                        Cadastrar-se </a> <a href="../login.html" class="btn-sm btn-success my-sm-0"> <i
+                            class="fa fa-check-circle" aria-hidden="true"></i> Entrar </a></form>
             </div>
         </div>
     </nav>
-
-    <div class="container text-center">
-        <h1>Agendamentos de horário</h1>
+    <div class="container">
+        <div class="card o-hidden border-0 mt-2">
+            <div class="card-body bg-gradient-light p-0">
+                <div class="row justify-content-center">
+                    <div class="d-none d-lg-block bg-register-image"></div>
+                    <div class="col-lg-7">
+                        <div class="p-2 p-md-3 p-lg-4">
+                            <div class="text-center">
+                                <h1 class="h3 text-primary mb-4">Agendamentos de Horários!</h1>
+                            </div>
+                            <form class="user">
+                                <div class="form-group"> <input type="datetime" class="form-control rad" id="nome"
+                                        placeholder="Selecionar Data"></div>
+                                <div class="form-group"> <input type="text" class="form-control rad" id="endereco"
+                                        placeholder="Selecionar Serviço"></div>
+                                <div class="form-group"> <input type="text" class="form-control rad" id="endereco"
+                                        placeholder="Selecionar Profissional"></div><a href="#" onclick="showSnack()"
+                                    class="btn btn-info btn-block rad mt-4"> <strong class="h6">BUSCAR</strong> </a>
+                            </form>
+                            <hr>
+                            <div class="text-center"> <a class="small" href="#">Ajuda?</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <footer class="text-center" id="rodape">
-        <br>
-        <a class="mx-2" href="../index.html">Home</a>
-        <a class="mx-2" href="estabelecimentos.html">Estabelecimentos</a>
-        <a class="mx-2" href="agendamentos.html">Agendamentos</a>
-        <a class="mx-2" href="sobre_nos.html">Sobre nós</a>
-        <a class="mx-2" href="https://mega.nz/#!2NgRBYJA!nW5QuqKkbQwq6NRoDp_3PsQZbnuGtWFyQNDdh5LTIhU"
-            target="_blank">Baixar
-            Mehsys</a><br>
-        <p>Copyright &copy; 2020 - by Hans M Boron <br />
-            <a href="https://web.facebook.com/hansmateusboron.boron" target="_blank">Facebook</a> |
-            <a href="https://br.linkedin.com/pub/hans-mateus-boron/a4/468/282" target="_blank">LinkedIn</a></p>
-    </footer>
-
+    <div id="snackbar"><strong>Busca ainda não implementada!</strong></div>
+    <footer id="rodape" class="pt-2 pb-0 bg-gradient-primary text-center"> <a class="mx-lg-3 mx-1 text-light"
+            href="../index.html"><i class="fa fa-home"></i> <small>Home</small></a> <a class="mx-lg-3 mx-1 text-light"
+            href="estabelecimentos.html"><i class="fa fa-map-marker"></i> <small>Estabelecimentos</small></a> <a
+            class="mx-lg-3 mx-1 text-light" href="agendamentos.html"><i class="fa fa-calendar"></i>
+            <small>Agendamentos</small></a> <a class="mx-lg-3 mx-1 text-light" href="sobre_nos.html"><i
+                class="fa fa-info-circle"></i> <small>Sobre</small></a> <a class="mx-lg-3 mx-1 text-light"
+            href="https://mega.nz/#!2NgRBYJA!nW5QuqKkbQwq6NRoDp_3PsQZbnuGtWFyQNDdh5LTIhU" target="_blank"><i
+                class="fa fa-download"></i> <small>Baixar</small></a><br> Copyright &copy; 2020 - by Hans M Boron <br />
+        <a class="text-light" href="https://web.facebook.com/hansmateusboron.boron" target="_blank"><i
+                class="fa fa-facebook-square"></i> Facebook</a> | <a class="text-light"
+            href="https://br.linkedin.com/pub/hans-mateus-boron/a4/468/282" target="_blank"><i
+                class="fa fa-linkedin-square"></i> LinkedIn</a> </footer>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/snackbar.js"></script>
 </body>
 
 </html>
